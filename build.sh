@@ -1,2 +1,2 @@
-docker build -t thas/bt-panel6.0:latest -f Dockerfile .
+docker build -t thas/docker-bt-panel:latest -f Dockerfile .
 
