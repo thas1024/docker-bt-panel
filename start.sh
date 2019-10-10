@@ -2,7 +2,6 @@
 
 if [ ! -f /www/server/panel/data/notfirst ]; then
 # 根据环境变量修改用户名和密码
-cp -r /thas/panel/data /www/server/panel/
 sh -c  '/bin/echo -e "$PASSWORD" | /bin/bt 5' && sh -c  '/bin/echo -e "$USERNAME" | /bin/bt 6'
 echo '此文件用于表示已经设置过用户名和密码了' > /www/server/panel/data/notfirst
 fi

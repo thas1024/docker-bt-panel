@@ -21,7 +21,7 @@ RUN sh -c  '/bin/echo -e "$PASSWORD" | /bin/bt 5' \
 RUN sh /www/server/panel/install/install_soft.sh 1 install nginx 1.16
 
 ## 备份 避免映射volume后无法启动
-RUN mkdir /thas && mkdir /thas/panel && cp -r /www/server/panel/data /thas/panel \
+RUN mkdir /thas \
 && mkdir /thas/nginx && cp -r /www/server/nginx/conf /thas/nginx
 
 COPY start.sh /data/start.sh
